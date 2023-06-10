@@ -7,7 +7,7 @@ function spamFunc() {
     fallInterval = setInterval(fall, 10);
 }
 function isItSpam() {
-//     clearInterval(fallInterval);
+    clearInterval(fallInterval);
     clickTimer.push(Date.now());
     if (clickTimer.length >= clickRequired) {
         if (clickTimer.at(-1) - clickTimer[0] <= clickDelay) {
